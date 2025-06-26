@@ -1,8 +1,7 @@
-const express = require("express"); 
-const router = express.Router(); 
-const { protect } = require("../middlewares/auth"); 
-const Task = require("../models/Task"); 
-
+const express = require("express");
+const router = express.Router();
+const { protect } = require("../middlewares/auth");
+const Task = require("../models/task");
 
 router.post("/", protect, async (req, res) => {
   const { title, description, deadline, status, priority } = req.body; // Destructure task details
