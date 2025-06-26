@@ -2,8 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import TaskItem from "./TaskItem";
 import "../TaskList.css";
-
-const API_URL = "http://localhost:4000/api";
+import { API_URL } from "../constant/data";
 
 function TaskList({ token, refreshTasks, onEdit, onDelete }) {
   const [tasks, setTasks] = useState([]);

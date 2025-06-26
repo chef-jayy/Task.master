@@ -4,9 +4,9 @@ import Auth from "./components/Auth";
 import TaskList from "./components/TaskList";
 import TaskForm from "./components/TaskForm";
 import "./App.css";
+import { API_URL } from "./constant/data";
 
 // Define the base URL for the backend API
-const API_URL = "http://localhost:4000/api";
 
 function App() {
   // State to manage authentication token (initially from localStorage)
